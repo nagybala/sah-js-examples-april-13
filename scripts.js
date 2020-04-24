@@ -49,6 +49,33 @@ if (age < 18) {
 
 console.log('This is after the if');
 
+
+// Fourth part
+let colors = ['orange', 'lime', 'magenta', 'yellow', 'blue']
+
+
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[0]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[1]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[2]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[3]);
+$('#box-container').append('<div class="box"></div>');
+$('.box:last-child').css('background', colors[4]);
+
+colors.push('purple');
+
+colors.forEach((color) => {
+    $('#box-container').append('<div class="box"></div>');
+    $('.box:last-child').css('background', color);
+});
+
+for (let i = 0; i < 100; i = i ++) {
+    console.log(i);
+}
+
 // This a JavaScript comment
 
 /*
